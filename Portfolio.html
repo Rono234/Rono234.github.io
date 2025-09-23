@@ -2,82 +2,140 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Resume - Raneen AlRammahi</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume - Raneen AlRammahi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <h1>Raneen AlRammahi</h1>
-    <nav>
-      <button onclick="location.href='index.html'">
-      About
-    </button>
-     <button onclick="location.href='Passions.html'">
-       Volunteer & Passions
-    </button>
-      <button onclick="location.href='Portfolio.html'">Portfolio</button>
-      <button onclick="location.href='Projects.html'">Projects</button>
-    </nav>
-  </header>
-<section class =portfolio-container>
-    <section class="portfolio">
+    <header>
+        <h1>Raneen AlRammahi</h1>
+        <nav>
+            <button onclick="location.href='index.html'">
+                About
+            </button>
+            <button onclick="location.href='Projects.html'">Projects</button>
+            <button onclick="location.href='Passions.html'">
+                Volunteer & Passions
+            </button>
+            <button onclick="location.href='Portfolio.html'">Portfolio</button>
+        </nav>
+    </header>
+    <section class=portfolio-container>
+        <section class="portfolio">
 
-    <h2>❃ Art Portfolio ❃</h2>
-    <p class="intro">A showcase of my artwork, including commissioned pieces, digital illustrations, and traditional
-      artworks.</p>
- 
-  <!-- Filter Tabs -->
-  <div class="portfolio-filters">
-    <button data-filter="all" class="active">All</button>
-    <button data-filter="commissioned">Commissioned Work</button>
-    <button data-filter="digital">Digital Art</button>
-    <button data-filter="traditional">Traditional Art</button>
-  </div>
+            <h2>❃ Art Portfolio ❃</h2>
+            <p class="intro">A showcase of my artwork, including commissioned pieces, digital illustrations, and
+                traditional
+                artworks.</p>
 
-  <!-- Gallery Grid -->
-  <div class="portfolio-gallery">
-    <div class="portfolio-item commissioned">
-      <img src="images/commission1.jpg" alt="Commissioned artwork 1">
-    </div>
-    <div class="portfolio-item digital">
-      <img src="images/digital1.jpg" alt="Digital artwork 1">
-    </div>
-    <div class="portfolio-item traditional">
-      <img src="images/traditional1.jpg" alt="Traditional artwork 1">
-    </div>
-    <!-- Add more images -->
-  </div>
-</section>
+            <!-- Filter Tabs -->
+            <div class="portfolio-filters">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="commissioned">Commissioned Work</button>
+                <button data-filter="digital">Digital Art</button>
+                <button data-filter="traditional">Traditional Art</button>
+            </div>
 
-  <script> 
-    // JavaScript for filtering portfolio items
-    document.addEventListener('DOMContentLoaded', function () {
-        const filterButtons = document.querySelectorAll('.portfolio-filters button');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-    
-        filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
-    
-            const filter = button.getAttribute('data-filter');
-    
-            portfolioItems.forEach(item => {
-            if (filter === 'all' || item.classList.contains(filter)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
+            <!-- Gallery Grid -->
+            <div class="portfolio-gallery">
+                <div class="portfolio-item digital">
+                    <img src=" ArtPortfolio_9.png" alt="Artwork 9">
+                    <img src=" ArtPortfolio_11.png" alt="Artwork 11">
+                    <img src=" ArtPortfolio_13.png" alt="Artwork 13">
+                    <img src=" ArtPortfolio_52.png" alt="Artwork 52">
+                    <img src=" ArtPortfolio_53.png" alt="Artwork 53">
+                    <img src=" ArtPortfolio_25.png" alt="Artwork 25">
+                    <img src=" ArtPortfolio_3.png" alt="Artwork 3">
+                    <img src=" ArtPortfolio_4.png" alt="Artwork 4">
+                    <img src=" ArtPortfolio_5.png" alt="Artwork 5">
+                    <img src=" ArtPortfolio_50.png" alt="Artwork 50">
+                    <img src=" ArtPortfolio_27.png" alt="Artwork 27">
+                    <img src=" ArtPortfolio_7.png" alt="Artwork 7">
+                    <img src=" ArtPortfolio_51.png" alt="Artwork 51">
+
+                    <img src=" ArtPortfolio_15.png" alt="Artwork 15">
+
+
+                    <img src=" ArtPortfolio_21.png" alt="Artwork 21">
+
+                    <img src=" ArtPortfolio_23.png" alt="Artwork 23">
+
+                
+
+                    <img src=" ArtPortfolio_29.png" alt="Artwork 29">
+
+                </div>
+
+                <div class="portfolio-item digital commissioned">
+                    <img src=" ArtPortfolio_30.png" alt="Artwork 30">
+                    <img src=" ArtPortfolio_46.png" alt="Artwork 46">
+                    <img src=" ArtPortfolio_1.png" alt="Artwork 1">
+                    <img src=" ArtPortfolio_2.png" alt="Artwork 2">
+                    <img src=" ArtPortfolio_8.png" alt="Artwork 8">
+                    <img src=" ArtPortfolio_10.png" alt="Artwork 10">
+                    <img src=" ArtPortfolio_12.png" alt="Artwork 12">
+                    <img src=" ArtPortfolio_14.png" alt="Artwork 14">
+                    <img src=" ArtPortfolio_17.png" alt="Artwork 17">
+                    <img src=" ArtPortfolio_19.png" alt="Artwork 19">
+                    <img src=" ArtPortfolio_18.png" alt="Artwork 18">
+                    <img src=" ArtPortfolio_20.png" alt="Artwork 20">
+                    <img src=" ArtPortfolio_22.png" alt="Artwork 22">
+                    <img src=" ArtPortfolio_24.png" alt="Artwork 24">
+                    <img src=" ArtPortfolio_26.png" alt="Artwork 26">
+                    <img src=" ArtPortfolio_6.png" alt="Artwork 6">
+                    <img src=" ArtPortfolio_28.png" alt="Artwork 28">
+                </div>
+                <div class="portfolio-item traditional">
+                    <img src=" ArtPortfolio_47.png" alt="Artwork 47">
+                    <img src=" ArtPortfolio_48.png" alt="Artwork 48">
+                    <img src=" ArtPortfolio_49.png" alt="Artwork 49">
+                    <img src=" ArtPortfolio_31.png" alt="Artwork 31">
+                    <img src=" ArtPortfolio_44.png" alt="Artwork 44">
+                    <img src=" ArtPortfolio_40.png" alt="Artwork 40">
+                    <img src="ArtPortfolio_45.png" alt="Artwork 45">
+                    <img src="ArtPortfolio_32.png" alt="Artwork 32">
+                    <img src="ArtPortfolio_33.png" alt="Artwork 33">
+                    <img src="ArtPortfolio_35.png" alt="Artwork 35">
+                    <img src="ArtPortfolio_34.png" alt="Artwork 34">
+                    <img src="ArtPortfolio_36.png" alt="Artwork 36">
+                    <img src="ArtPortfolio_37.png" alt="Artwork 37">
+                    <img src="ArtPortfolio_38.png" alt="Artwork 38">
+                    <img src="ArtPortfolio_39.png" alt="Artwork 39">
+                    <!-- <img src=" ArtPortfolio_43.png" alt="Artwork 43"> -->
+                    <img src="ArtPortfolio_41.png" alt="Artwork 41">
+                    <!-- <img src=" ArtPortfolio_42.png" alt="Artwork 42"> -->
+                </div>
+                <!-- Add more images -->
+            </div>
+        </section>
+
+        <script>
+            // JavaScript for filtering portfolio items
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll('.portfolio-filters button');
+                const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Remove active class from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        const filter = button.getAttribute('data-filter');
+
+                        portfolioItems.forEach(item => {
+                            if (filter === 'all' || item.classList.contains(filter)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
             });
-        });
-        });
-    });
-</script>
-
+        </script>
 
 </body>
