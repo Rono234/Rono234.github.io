@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Resume - Raneen AlRammahi</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 
 <body>
     <header>
         <h1>Raneen AlRammahi</h1>
         <nav>
-            <button onclick="location.href='index.html'">
+            <button onclick="location.href='Index.html'">
                 About
             </button>
+            <button onclick="location.href='Projects.html'">Projects</button>
             <button onclick="location.href='Passions.html'">
                 Volunteer & Passions
             </button>
             <button onclick="location.href='Portfolio.html'">Portfolio</button>
-            <button onclick="location.href='Projects.html'">Projects</button>
         </nav>
     </header>
     <div class="hobby-container">
-
-        <div class="sectionV Volunteer-section">
-            <h3>❃ Volunteer ❃ </h3>
+        
+        <div class="sectionV  Volunteer-section">
+            <h2 style="text-align: center;">❃ Volunteer ❃ </h2>
             <div class="Volunteer-card">
                 <h3>Musical Volunteer Work| <em>Brookdale Troy: Assisted Living and Memory Care</em></h3>
                 <p><em>2022 – 2023</em></p>
@@ -51,7 +51,7 @@
         </div>
 
         <div class="section hobbies">
-            <h3>❃ Hobbies ❃</h3>
+            <h2>❃ Hobbies ❃</h2>
             <div class="hobby-grid">
 
                 <div class="hobby-card hover-hobby-card">
@@ -64,18 +64,19 @@
                                 <ul>
                                     <li>Create digital illustrations with Photoshop & Procreate.</li>
                                     <li>Explore various art styles and traditional mediums.</li>
+                                    <li>Curious about Art History and various museums</li>
                                 </ul>
                             </div>
 
                             <!-- Back of card (Images) -->
                             <div class="flip-card-back">
-                                <div class="image-gallery">
-                                    <img src="images/art1.jpg" alt="Art sample 1">
-                                    <img src="images/art2.jpg" alt="Art sample 2">
-                                    <img src="images/art3.jpg" alt="Art sample 3">
+                                <div class="image-gallery" data-gallery="art">
+                                    <img src=" pome.png" alt="Art sample 1">
+                                    <img src=" art.png" alt="Art sample 2">
+                                    <img src=" vanGogh.png" alt="Art sample 3">
                                 </div>
                             </div>
-
+ 
                         </div>
                     </div>
                 </div>
@@ -94,10 +95,10 @@
                             </div>
 
                             <div class="flip-card-back">
-                                <div class="image-gallery">
-                                    <img src="images/art1.jpg" alt="Art sample 1">
-                                    <img src="images/art2.jpg" alt="Art sample 2">
-                                    <img src="images/art3.jpg" alt="Art sample 3">
+                                <div class="image-gallery" data-gallery="gaming">
+                                    <img src=" loz.png" alt="Legend of Zelda">
+                                    <img src=" machinarium.png" alt="Machinarium">
+                                    <img src=" unpacking.png" alt="unpacking">
                                 </div>
                             </div>
 
@@ -145,10 +146,10 @@
                                 </ul>
                             </div>
                             <div class="flip-card-back">
-                                <div class="image-gallery">
-                                    <img src="images/art1.jpg" alt="Art sample 1">
-                                    <img src="images/art2.jpg" alt="Art sample 2">
-                                    <img src="images/art3.jpg" alt="Art sample 3">
+                                <div class="image-gallery" data-gallery="reading">
+                                    <img src=" tuesdays.png" alt="Art sample 1">
+                                    <img src=" hare.png" alt="Art sample 2">
+                                    <img src=" coffee.png" alt="Art sample 3">
                                 </div>
                             </div>
 
@@ -181,10 +182,10 @@
                                 </ul>
                             </div>
                             <div class="flip-card-back">
-                                <div class="image-gallery">
-                                    <img src="images/art1.jpg" alt="Art sample 1">
-                                    <img src="images/art2.jpg" alt="Art sample 2">
-                                    <img src="images/art3.jpg" alt="Art sample 3">
+                                <div class="image-gallery" data-gallery="gardening">
+                                    <img src=" flower.png" alt="Mum's flower">
+                                    <img src=" berry.png" alt="Strawberry bush">
+                                    <img src=" rose.png" alt="Rose bush">
                                 </div>
                             </div>
 
@@ -205,7 +206,7 @@
                                 </ul>
                             </div>
                             <div class="flip-card-back">
-                                <div class="image-gallery">
+                                <div class="image-gallery" data-gallery="crochet-knitting">
                                     <img src="images/art1.jpg" alt="Art sample 1">
                                     <img src="images/art2.jpg" alt="Art sample 2">
                                     <img src="images/art3.jpg" alt="Art sample 3">
@@ -232,7 +233,7 @@
                                 </ul>
                             </div>
                             <div class="flip-card-back">
-                                <div class="image-gallery">
+                                <div class="image-gallery" data-gallery="other-crafts">
                                     <img src="images/art1.jpg" alt="Art sample 1">
                                     <img src="images/art2.jpg" alt="Art sample 2">
                                     <img src="images/art3.jpg" alt="Art sample 3">
