@@ -295,7 +295,7 @@
 }
 
 .portfolio-filters button.active,
-.portfolio-filters button:hover {
+.portfolio-filters button: hover {
   background: #c4b5fd;
   color: white;
 }
@@ -314,7 +314,7 @@
   transition: transform 0.3s;
 }
 
-.portfolio-item img:hover {
+.portfolio-item img: hover {
   transform: scale(1.03);
 }
 
