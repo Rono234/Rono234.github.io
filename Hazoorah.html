@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume - Raneen AlRammahi</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f6f8;
+        line-height: 1.6;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 1.1rem;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+    }
+
+    .media-grid, .media-grid-wireframes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+    }
+    .media-grid-wireframes  {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .media-placeholder {
+        background-color: #e5e7eb;
+        border-radius: 10px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6b7280;
+        font-size: 0.9rem;
+    }
+
+    .media-grid img,
+    .media-grid video, 
+    .media-grid-wireframes img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    .tech-tags span {
+        display: inline-block;
+        background-color: #f3ceca61;
+        color: #69251c;
+        font-weight: semi-bold;
+        padding: 6px 10px;
+        margin: 4px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px #ae817b99;
+        font-size: 0.85rem;
+    }
+
+    #projectheader {
+        margin-bottom: 30px;
+        background-color: rgba(250, 235, 215, 0.193);
+        padding: 20px;
+        border-radius: 152px;
+        border-color: #ae817b;
+        border-style: double;
+        border-width: 8px;
+    }
+
+    .db-section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .db-content {
+        flex: 1;
+    }
+
+    .db-image {
+        flex: 1;
+    }
+
+    .db-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 8px 8px #ae817b99, 0 15px 15px rgba(211, 170, 170, 0.329);
+    }
+
+    @media (max-width: 768px) {
+        .db-section-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Raneen AlRammahi</h1>
+        <nav>
+            <button onclick="location.href='index.html'">
+                About
+            </button>
+            <button onclick="location.href='Projects.html'">Projects</button>
+            <button onclick="location.href='Passions.html'">
+                Volunteer & Passions
+            </button>
+            <button onclick="location.href='Portfolio.html'">Portfolio</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="projectheader">
+            <img src=" Photos/images/titleLogo.PNG" alt="Hazoorah Logo" 
+            style="display: block; margin: 5px auto; max-width: 594px;">
+        </div>
+        <!-- Overview -->
+        <section>
+            <h2>Project Overview</h2>
+            <p>
+                Hazoorah is a logic-based puzzle game where players solve visual deduction
+                riddles by arranging characters and items on a grid according to a set of
+                logical rules. Each level presents clues such as positional constraints and
+                relationships between objects, challenging players to think critically and
+                experiment with different arrangements.
+            </p>
+
+            <p>
+                As players progress through levels and themed towns, puzzles increase in
+                complexity by introducing more elements, stricter rules, and larger grids.
+                The game rewards observation, reasoning, and persistence.
+            </p>
+        </section>
+
+        <!-- Media -->
+         <section>
+            <h2>WireFrames</h2>
+            <div class="media-grid-wireframes">
+                <img src=" Photos/images/wireframe2.png" alt="InkVoyage Screenshot 1">
+                <img src=" Photos/images/wireframe1.png" alt="InkVoyage Screenshot 2">
+                <img src=" Photos/images/wireframe3.png" alt="InkVoyage Screenshot 3">
+            </div>
+        </section>
+
+        <section>
+            <h2>Final output</h2>
+            <div class="media-grid">
+                <video controls>
+                    <source src=" Photos/vids/HazDemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src=" Photos/images/H1.png" alt="Hazoorah Screenshot 1">
+                <img src=" Photos/images/H2.png" alt="Hazoorah Screenshot 2">
+                <img src=" Photos/images/H3.png" alt="Hazoorah Screenshot 3">
+                <img src=" Photos/images/H4.png" alt="Hazoorah Screenshot 4">
+                <img src=" Photos/images/H5.png" alt="Hazoorah Screenshot 5">
+                <img src=" Photos/images/H6.png" alt="Hazoorah Screenshot 6">
+                <img src=" Photos/images/H7.png" alt="Hazoorah Screenshot 7">
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Visual, logic-based deduction puzzles</li>
+                <li>Drag-and-drop interactive grid system</li>
+                <li>Multi-level progression across themed towns</li>
+                <li>Hint system with limited usage per level</li>
+                <li>Star-based scoring and attempt limits</li>
+                <li>Pause, resume, shuffle, and reset controls</li>
+            </ul>
+        </section>
+
+        <!-- Systems Design -->
+        <section>
+            <h2>Core Systems & Gameplay Logic</h2>
+            <ul>
+                <li>
+                    <strong>Puzzle Logic System:</strong> Validates user arrangements against
+                    correct solutions and generates contextual hints.
+                </li>
+                <li>
+                    <strong>Level Progression System:</strong> Manages level unlocking, star
+                    ratings, and town-based advancement.
+                </li>
+                <li>
+                    <strong>User Grid Gameplay:</strong> Provides a tactile drag-and-drop grid
+                    for testing logical deductions in real time.
+                </li>
+                <li>
+                    <strong>Game State Management:</strong> Tracks progress, saves sessions,
+                    and ensures smooth transitions between screens.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Tech Stack -->
+        <section>
+            <h2>Technologies Used</h2>
+            <div class="tech-tags">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Drag & Drop API</span>
+                <span>LocalStorage</span>
+                <span>Game State Management</span>
+                <span>Custom UI Components</span>
+            </div>
+        </section>
+
+        <!-- Design Focus -->
+        <section>
+            <h2>Design & User Experience</h2>
+            <p>
+                Hazoorah emphasizes an intuitive and playful interface, using original
+                illustrations, colorful themes, and clear visual feedback to guide players
+                through complex logical problems. The design supports both desktop and
+                mobile layouts, ensuring accessibility and ease of play.
+            </p>
+        </section>
+
+        <!-- Motivation -->
+        <section>
+            <h2>Why Hazoorah?</h2>
+            <p>
+                This project explores how abstract logical reasoning can be transformed into
+                an engaging, visual game experience. Hazoorah was designed to strengthen
+                critical thinking skills while remaining approachable, creative, and fun.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        © Raneen AlRammahi
+    </footer>
+
+</body>
+
+</html>
